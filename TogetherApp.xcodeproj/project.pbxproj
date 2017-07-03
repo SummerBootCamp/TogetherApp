@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A492773EFB1A9CA56D14B650 /* Pods_TogetherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2BC3B256B7971EBC730E7D3 /* Pods_TogetherApp.framework */; };
+		AF0A40B41F0A24100017D47C /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0A40B31F0A24100017D47C /* CustomAlertViewController.swift */; };
+		AF0A40B61F0A27760017D47C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF0A40B51F0A27760017D47C /* GoogleService-Info.plist */; };
 		AF0A95A81F05FFAA002A3DFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0A95A71F05FFAA002A3DFE /* AppDelegate.swift */; };
 		AF0A95AD1F05FFAA002A3DFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF0A95AB1F05FFAA002A3DFE /* Main.storyboard */; };
 		AF0A95B01F05FFAB002A3DFE /* TogetherApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AF0A95AE1F05FFAB002A3DFE /* TogetherApp.xcdatamodeld */; };
@@ -17,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7CB65745F32EFD06CFED785C /* Pods-TogetherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TogetherApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TogetherApp/Pods-TogetherApp.release.xcconfig"; sourceTree = "<group>"; };
+		87136EF7F85DC316B7033FA2 /* Pods-TogetherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TogetherApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TogetherApp/Pods-TogetherApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A2BC3B256B7971EBC730E7D3 /* Pods_TogetherApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TogetherApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF0A40B31F0A24100017D47C /* CustomAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomAlertViewController.swift; path = Extension/CustomAlertViewController.swift; sourceTree = "<group>"; };
+		AF0A40B51F0A27760017D47C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AF0A95A41F05FFAA002A3DFE /* TogetherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TogetherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF0A95A71F05FFAA002A3DFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF0A95AC1F05FFAA002A3DFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -34,17 +42,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A492773EFB1A9CA56D14B650 /* Pods_TogetherApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1732DBEA18D1C7E8AD514B4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2BC3B256B7971EBC730E7D3 /* Pods_TogetherApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF0A40B21F0A23A60017D47C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AF0A40B31F0A24100017D47C /* CustomAlertViewController.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
 		AF0A959B1F05FFA9002A3DFE = {
 			isa = PBXGroup;
 			children = (
 				AF0A95A61F05FFAA002A3DFE /* TogetherApp */,
 				AF0A95A51F05FFAA002A3DFE /* Products */,
+				DBFA72568A04B2EE29934068 /* Pods */,
+				1732DBEA18D1C7E8AD514B4C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +86,7 @@
 		AF0A95A61F05FFAA002A3DFE /* TogetherApp */ = {
 			isa = PBXGroup;
 			children = (
+				AF0A40B21F0A23A60017D47C /* Extension */,
 				AF0C48A21F065A6E009EA15C /* Model */,
 				AF0C48A11F065A68009EA15C /* View */,
 				AF0C48A01F065A4E009EA15C /* Controller */,
@@ -68,6 +96,7 @@
 				AF0A95B11F05FFAB002A3DFE /* Assets.xcassets */,
 				AF0A95B31F05FFAB002A3DFE /* LaunchScreen.storyboard */,
 				AF0A95B61F05FFAB002A3DFE /* Info.plist */,
+				AF0A40B51F0A27760017D47C /* GoogleService-Info.plist */,
 				AF0A95AE1F05FFAB002A3DFE /* TogetherApp.xcdatamodeld */,
 			);
 			path = TogetherApp;
@@ -104,6 +133,15 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		DBFA72568A04B2EE29934068 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				87136EF7F85DC316B7033FA2 /* Pods-TogetherApp.debug.xcconfig */,
+				7CB65745F32EFD06CFED785C /* Pods-TogetherApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -111,9 +149,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF0A95B91F05FFAB002A3DFE /* Build configuration list for PBXNativeTarget "TogetherApp" */;
 			buildPhases = (
+				62848C0155B29BF590185930 /* [CP] Check Pods Manifest.lock */,
 				AF0A95A01F05FFAA002A3DFE /* Sources */,
 				AF0A95A11F05FFAA002A3DFE /* Frameworks */,
 				AF0A95A21F05FFAA002A3DFE /* Resources */,
+				71A610499F8F2EDCA23E8EAC /* [CP] Embed Pods Frameworks */,
+				52A90E71B25A0B0BDA741645 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF0A95B51F05FFAB002A3DFE /* LaunchScreen.storyboard in Resources */,
+				AF0A40B61F0A27760017D47C /* GoogleService-Info.plist in Resources */,
 				AF0A95B21F05FFAB002A3DFE /* Assets.xcassets in Resources */,
 				AF0A95AD1F05FFAA002A3DFE /* Main.storyboard in Resources */,
 			);
@@ -171,12 +213,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		52A90E71B25A0B0BDA741645 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TogetherApp/Pods-TogetherApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62848C0155B29BF590185930 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		71A610499F8F2EDCA23E8EAC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TogetherApp/Pods-TogetherApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AF0A95A01F05FFAA002A3DFE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AF0C48A61F065B09009EA15C /* SignUpVC.swift in Sources */,
+				AF0A40B41F0A24100017D47C /* CustomAlertViewController.swift in Sources */,
 				AF0A95B01F05FFAB002A3DFE /* TogetherApp.xcdatamodeld in Sources */,
 				AF0A95A81F05FFAA002A3DFE /* AppDelegate.swift in Sources */,
 				AF0C48A41F065AC0009EA15C /* SignInVC.swift in Sources */,
@@ -302,6 +393,7 @@
 		};
 		AF0A95BA1F05FFAB002A3DFE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87136EF7F85DC316B7033FA2 /* Pods-TogetherApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TogetherApp/Info.plist;
@@ -314,6 +406,7 @@
 		};
 		AF0A95BB1F05FFAB002A3DFE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CB65745F32EFD06CFED785C /* Pods-TogetherApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TogetherApp/Info.plist;
